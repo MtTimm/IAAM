@@ -11,6 +11,11 @@ public class App{
                 System.out.println(dados[i].toString());
             }
 
+            dados = Normalizador.normalizar(dados);
+
+            for (int i = 0; i < dados.length; i++) {
+                System.out.println(dados[i].toString());
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
